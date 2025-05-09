@@ -162,8 +162,7 @@ module npu #(
   );
 
   // ---------------------------------------------------------------------------
-  // TODO: Instantiate KV engine and Sparse GEMM engine here.
-  //       You will need to extend the interconnect for additional slave ports.
+  // TODO: Instantiate Tensor and Vector engine.
   // ---------------------------------------------------------------------------
 
 endmodule
