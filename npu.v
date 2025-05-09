@@ -1,7 +1,7 @@
 //-----------------------------------------------------------------------------
 // npu.v
 // Top-level NPU integrating CPU controller, AXI4-Lite interconnect,
-// IMEM, DMEM, scalar engine, and placeholders for KV PIM and Sparse GEMM engines.
+// IMEM, DMEM, scalar engine, and placeholders for Tensor / Vector and Sparse GEMM engines.
 //----------------------------------------------------------------------------- 
 module npu #(
     parameter ADDR_WIDTH     = 32,
