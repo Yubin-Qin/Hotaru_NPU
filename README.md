@@ -1,2 +1,2 @@
 # Hotaru_NPU
-Incompleted.
+A heterogeneous NPU demo for LLM acceleration. (Incompleted)
