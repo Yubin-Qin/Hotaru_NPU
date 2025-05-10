@@ -1,7 +1,7 @@
 //-----------------------------------------------------------------------------
 // axi4lite_imem.v
 //-----------------------------------------------------------------------------
-// AXI4-Lite slave ROM (Instruction Memory) with parameterizable depth (1MB).
+// AXI4-Lite slave ROM (Instruction Memory) with 1MB capacity.
 // Read-only: supports single-beat 32-bit reads. Ignoring writes.
 //-----------------------------------------------------------------------------
 module axi4lite_imem #(
@@ -69,7 +69,7 @@ module axi4lite_imem #(
   reg [DATA_WIDTH-1:0] mem [0:DEPTH-1];
   initial begin
     // Optionally initialize memory from a file:
-    $readmemh("imem_init.hex", mem);
+    // $readmemh("imem_init.hex", mem);
   end
 
   // Read data path
